@@ -238,15 +238,8 @@
                 console.error("載入資料失敗:", error);
                 document.getElementById('data-container').innerHTML = `
                     <div class="flex flex-col items-center py-20 text-red-500">
-                        <p class="text-xl font-bold mb-2">無法讀取教師資料 (data.csv)</p>
-                        <p class="text-sm text-gray-600 mb-4">系統發生安全性阻擋或找不到檔案。</p>
-                        <div class="bg-gray-100 p-6 rounded-lg text-left text-sm text-gray-700 w-full max-w-md">
-                            <p class="font-bold mb-2">請確認以下兩點：</p>
-                            <ol class="list-decimal pl-5 space-y-2">
-                                <li>檔名是否為 <b>data.csv</b> 且與網頁放在<b>同一個資料夾</b>。</li>
-                                <li><b>最常見錯誤：</b>基於瀏覽器安全性 (CORS)，不能直接雙擊 HTML 打開。您必須透過<b>網頁伺服器</b> (例如 VS Code 的 Live Server) 執行，或將兩支檔案上傳到正式網站空間。</li>
-                            </ol>
-                        </div>
+                        <p class="text-xl font-bold mb-2">無法讀取教師資料</p>
+                        
                     </div>
                 `;
             }
