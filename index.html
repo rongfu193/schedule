@@ -266,7 +266,7 @@
             const baseUrl = "https://esa.ntpc.edu.tw/web-lsnmgt/templates/timetable_print.html?show_type%3D1%26showsub%3Dlcname%26showcls%3Dclassname%26showprint%3Dhtml%26ss%3DWjZBK2prdkdQNXpmSXhtNnRkT3dCQT09";
             const timetableUrl = isClassTeacher 
                 ? `${baseUrl}%26picksub%3Dclass%26classid%3D${t.任教班級}`
-                : `${baseUrl}%26picksub%3Dteacher%26weekno%3D1%26teaid%3D${t.教師ID}`;
+                : `${baseUrl}%26picksub%3Dteacher%26teaid%3D${t.教師ID}`;
 
             const hasWeb = t.教師網頁 && t.教師網頁.trim().startsWith('http');
             const fullDisplayName = `${t.教師姓名} <span class="text-gray-500 font-normal text-xs md:text-sm ml-1">${t.職稱}</span>`;
